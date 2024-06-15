@@ -1,5 +1,5 @@
 import pandas as pd
-from dataLoader import load_data
+from data_loader import load_data
 
 def main():
     # Load the datasets
