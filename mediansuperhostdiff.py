@@ -1,12 +1,10 @@
 import pandas as pd
+from data_loader import load_data
 
 # Assuming listings is your DataFrame
 # Example data
-data = {
-    'host_is_superhost': ['f', 't', 'f', 't', 'f'],
-    'price': [100, 120, 80, 110, 90]
-}
-listings = pd.DataFrame(data)
+
+listings = pd.DataFrame(load_data)
 
 # Convert price to numeric if needed
 listings['price'] = pd.to_numeric(listings['price'], errors='coerce')
