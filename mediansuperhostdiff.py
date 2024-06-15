@@ -4,7 +4,7 @@ from data_loader import load_data
 # Assuming listings is your DataFrame
 # Example data
 
-listings = pd.DataFrame(load_data)
+listings = load_data()
 
 # Convert price to numeric if needed
 listings['price'] = pd.to_numeric(listings['price'], errors='coerce')
